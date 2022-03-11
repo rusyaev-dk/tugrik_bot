@@ -41,10 +41,10 @@ def load_config(path: str = None):
             use_redis=env.bool("USE_REDIS"),
         ),
         db=DbConfig(
-            host=env.str('DB_HOST'),
+            host=env.str('ip'),
             password=env.str('DB_PASS'),
             user=env.str('DB_USER'),
-            database=env.str('DB_NAME')
+            database=env.str('DATABASE')
         ),
         misc=Miscellaneous()
     )
